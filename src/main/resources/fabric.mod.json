@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "lib-shading",
+	"version": "${version}",
+
+	"name": "Lib Shading",
+	"description": "Stacking overrides!",
+	"authors": [
+		"StartsMercury"
+	],
+	"contact": {
+		"sources": "https://github.com/StartsMercury/lib-shading"
+	},
+
+	"license": "MIT",
+	"icon": "assets/libshading/icon.png",
+
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.github.startsmercury.libshading.entrypoint.LibShadingClientMod"
+		]
+	},
+	"mixins": [
+		"lib-shading.mixins.json"
+	],
+
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": ">=${minecraft_version}",
+		"java": ">=17"
+	}
+}
